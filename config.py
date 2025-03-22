@@ -5,11 +5,10 @@
 import os
 
 class Config(object):
-    # get a token from @BotFather
-    pass
-    """
+    # Get a token from @BotFather
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
-    API_ID = int(os.environ["API_ID", ]
-    API_HASH = os.environ["API_HASH", ""]
-    AUTH_USERS = """"
- 
+    API_ID = int(os.environ.get("API_ID", 0))  # Retrieve API_ID with a default of 0
+    API_HASH = os.environ.get("API_HASH", "")
+    AUTH_USERS = os.environ.get("AUTH_USERS", "").split(",")  # Handle AUTH_USERS as a comma-separated string
+
+    # Additional configuration options can be added here
