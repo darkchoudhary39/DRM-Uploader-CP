@@ -1,0 +1,34 @@
+{
+    "name": "Text Uploader Bot",
+    "description": "Download videos from various websites using this telegram bot",
+    "logo": "https://graph.org/file/5af356000ab4f88312c0b.jpg",
+    "keywords": [
+        "text-video",
+        "video-extract",
+        "pyrogram"
+    ],
+    "repository": "https://github.com/darkchoudhary39/DRM-Uploader-CP",
+    "success_url": "https://telegram.me/imendaxpublic",
+    "env": {
+        "API_ID": {
+            "description": "Enter your API ID. You can generate it by visiting https://my.telegram.org/auth",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "Enter your API Hash. You can generate it by visiting https://my.telegram.org/auth",
+            "required": true
+        },
+        "BOT_TOKEN": {
+            "description": "Enter your bot token. You can generate it with @BotFather",
+            "required": true
+        }
+    },
+    "build": {
+        "env": "python",
+        "commands": [
+            "pip install -r requirements.txt"
+        ]
+    },
+    "start": "python main.py",
+    "addons": []
+}
