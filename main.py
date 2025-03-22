@@ -44,7 +44,7 @@ ADMINS.append(OWNER)
 
 bot = Client("bot",    
    bot_token="",    
-   api_id= ,    
+   api_id="",    
    api_hash= ""
 )
 
